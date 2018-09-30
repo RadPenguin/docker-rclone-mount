@@ -2,12 +2,6 @@
 
 Mount an [rclone](http://rclone.org) folder that is sharable to other containers.
 
-ENV CONFIG_OPTS="--config /config/rclone.conf"
-ENV MOUNT_PATH="/media"
-ENV RCLONE_OPTS="--allow-other --allow-non-empty"
-ENV REMOTE_NAME="media:"
-ENV TZ="America/Edmonton"
-
 ## Usage
 ```
 docker create \
