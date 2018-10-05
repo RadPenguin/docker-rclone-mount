@@ -10,10 +10,6 @@ ENV RCLONE_OPTS="--allow-other --allow-non-empty"
 ENV REMOTE_NAME="media:"
 ENV TZ="America/Edmonton"
 
-RUN \
- echo "**** configure fuse ****" && \
- sed -ri 's/^#user_allow_other/user_allow_other/' /etc/fuse.conf
-
 ADD start.sh /start.sh
 
 VOLUME ["/config"]
